@@ -1,23 +1,22 @@
-<header class="w-full fixed top-0 left-0 bg-white shadow z-50">
+<header
+  class="w-full fixed top-0 left-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/90 shadow-sm"
+>
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo + Brand Name -->
     <div class="flex items-center space-x-3">
-      <a href="/" class="flex items-center space-x-3">
+      <a href="/" class="flex items-center space-x-3 group">
         <img
           src="../../../assets/images/logo.jpg"
           width="50"
-          class="rounded"
+          class="rounded shadow-sm group-hover:scale-105 transition-transform duration-300"
           alt="Logo"
         />
-        <!-- <span class="text-xl font-bold text-gray-800 tracking-wide"
-          >Mela Café</span
-        > -->
       </a>
     </div>
 
     <!-- Hamburger Icon (Mobile) -->
     <div class="md:hidden">
-      <button (click)="toggleMenu()" class="text-gray-800 focus:outline-none">
+      <button (click)="toggleMenu()" class="text-gray-800 focus:outline-none hover:text-black transition">
         <svg
           class="w-6 h-6"
           fill="none"
@@ -36,34 +35,35 @@
 
     <!-- Navigation Links (Desktop) -->
     <nav
-      class="space-x-6 text-gray-700 font-medium hidden md:flex md:items-center"
+      class="space-x-8 text-gray-700 font-medium hidden md:flex md:items-center"
     >
-      <a href="/" class="hover:text-black transition">Hjem</a>
+      <a href="/" class="relative group hover:text-black transition">
+        Hjem
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
       <a
         [routerLink]="['/menu']"
         fragment="food"
-        class="hover:text-black transition"
+        class="relative group hover:text-black transition"
       >
         Meny
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="/catering" class="hover:text-black transition">Catering</a>
-      <a href="/contact" class="hover:text-black transition">Kontakt</a>
-
-      <!-- Language Switcher Dropdown -->
-      <!-- <select
-        (change)="switchLang($event)"
-        class="border border-gray-300 rounded-md py-1 px-2 text-sm cursor-pointer"
-      >
-        <option value="en">English</option>
-        <option value="no">Norsk</option>
-      </select> -->
+      <a href="/catering" class="relative group hover:text-black transition">
+        Catering
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="/contact" class="relative group hover:text-black transition">
+        Kontakt
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+      </a>
     </nav>
 
     <!-- Book Now Button (Desktop) -->
     <div class="hidden md:block">
       <a
         href="https://booking.gastroplanner.no/melacafe/t"
-        class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition"
+        class="bg-black text-white px-6 py-2.5 rounded hover:bg-gray-800 transition transform hover:scale-105 shadow-md duration-300"
       >
         Bestill nå
       </a>
@@ -72,38 +72,29 @@
 
   <!-- Mobile Menu: Smooth Slide Down -->
   <div
-    class="md:hidden overflow-hidden transition-all duration-700 ease-in-out"
+    class="md:hidden overflow-hidden transition-all duration-500 ease-in-out bg-white/95 backdrop-blur-md shadow-lg"
     [ngClass]="{
-      'max-h-[500px]': isMenuOpen,
-      'max-h-0': !isMenuOpen
+      'max-h-[500px] opacity-100': isMenuOpen,
+      'max-h-0 opacity-0': !isMenuOpen
     }"
   >
-    <nav class="flex flex-col space-y-2 text-gray-700 font-medium px-6 py-4">
-      <a href="/" class="hover:text-black transition">Hjem</a>
+    <nav class="flex flex-col space-y-4 text-gray-700 font-medium px-6 py-6 text-center">
+      <a href="/" class="hover:text-black transition transform hover:translate-x-1 duration-200">Hjem</a>
       <a
         [routerLink]="['/menu']"
         [fragment]="'food'"
-        class="hover:text-black transition"
+        class="hover:text-black transition transform hover:translate-x-1 duration-200"
       >
         Meny
       </a>
-      <a href="/catering" class="hover:text-black transition">Catering</a>
-      <a href="/contact" class="hover:text-black transition">Kontakt</a>
+      <a href="/catering" class="hover:text-black transition transform hover:translate-x-1 duration-200">Catering</a>
+      <a href="/contact" class="hover:text-black transition transform hover:translate-x-1 duration-200">Kontakt</a>
       <a
         href="https://booking.gastroplanner.no/melacafe/t"
-        class="bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition"
+        class="bg-black text-white inline-block py-3 rounded hover:bg-gray-800 transition shadow-md mt-4"
       >
         Bestill nå
       </a>
-
-      <!-- Mobile Language Switcher Dropdown -->
-      <!-- <select
-        (change)="switchLang($event)"
-        class="border border-gray-300 rounded-md py-1 px-2 text-sm cursor-pointer mt-2"
-      >
-        <option value="en">English</option>
-        <option value="no">Norsk</option>
-      </select> -->
     </nav>
   </div>
 </header>
