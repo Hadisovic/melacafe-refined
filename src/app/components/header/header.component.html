@@ -1,41 +1,59 @@
 <header
-  class="w-full fixed top-0 left-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-lg border-b border-white/20 shadow-soft">
-  <div class="max-w-7xl mx-auto px-6 py-4 md:py-5 flex justify-between items-center">
+  class="w-full fixed top-0 left-0 z-50 transition-all duration-300 backdrop-blur-md bg-white/90 shadow-sm"
+>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo + Brand Name -->
     <div class="flex items-center space-x-3">
-      <a href="/" class="flex items-center space-x-3 group outline-none">
-        <img src="../../../assets/images/logo.jpg" width="55"
-          class="rounded-lg shadow-sm group-hover:shadow-md transition-all duration-300 object-cover aspect-square"
-          alt="Logo" />
+      <a href="/" class="flex items-center space-x-3 group">
+        <img
+          src="../../../assets/images/logo.jpg"
+          width="50"
+          class="rounded shadow-sm group-hover:scale-105 transition-transform duration-300"
+          alt="Logo"
+        />
       </a>
     </div>
 
     <!-- Hamburger Icon (Mobile) -->
     <div class="md:hidden">
-      <button (click)="toggleMenu()"
-        class="text-gray-800 p-2 rounded-md hover:bg-gray-100 transition focus:outline-none">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+      <button (click)="toggleMenu()" class="text-gray-800 focus:outline-none hover:text-black transition">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
       </button>
     </div>
 
     <!-- Navigation Links (Desktop) -->
-    <nav class="hidden md:flex items-center space-x-10 text-gray-600 font-medium text-base">
-      <a href="/" class="relative group hover:text-black transition-colors duration-300 py-2">
+    <nav
+      class="space-x-8 text-gray-700 font-medium hidden md:flex md:items-center"
+    >
+      <a href="/" class="relative group hover:text-black transition">
         Hjem
         <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a [routerLink]="['/menu']" fragment="food"
-        class="relative group hover:text-black transition-colors duration-300 py-2">
+      <a
+        [routerLink]="['/menu']"
+        fragment="food"
+        class="relative group hover:text-black transition"
+      >
         Meny
         <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="/catering" class="relative group hover:text-black transition-colors duration-300 py-2">
+      <a href="/catering" class="relative group hover:text-black transition">
         Catering
         <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="/contact" class="relative group hover:text-black transition-colors duration-300 py-2">
+      <a href="/contact" class="relative group hover:text-black transition">
         Kontakt
         <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
       </a>
@@ -43,33 +61,39 @@
 
     <!-- Book Now Button (Desktop) -->
     <div class="hidden md:block">
-      <a href="https://booking.gastroplanner.no/melacafe/t"
-        class="bg-black text-white px-7 py-3 rounded-full hover:bg-gray-800 transition-all transform hover:-translate-y-0.5 shadow-md hover:shadow-lg duration-300 text-sm font-semibold tracking-wide">
-        Bestill bord
+      <a
+        href="https://booking.gastroplanner.no/melacafe/t"
+        class="bg-black text-white px-6 py-2.5 rounded hover:bg-gray-800 transition transform hover:scale-105 shadow-md duration-300"
+      >
+        Bestill nå
       </a>
     </div>
   </div>
 
   <!-- Mobile Menu: Smooth Slide Down -->
   <div
-    class="md:hidden overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] bg-white/95 backdrop-blur-xl border-t border-gray-100"
+    class="md:hidden overflow-hidden transition-all duration-500 ease-in-out bg-white/95 backdrop-blur-md shadow-lg"
     [ngClass]="{
-      'max-h-[500px] opacity-100 shadow-xl': isMenuOpen,
+      'max-h-[500px] opacity-100': isMenuOpen,
       'max-h-0 opacity-0': !isMenuOpen
-    }">
-    <nav class="flex flex-col space-y-2 text-gray-700 font-medium px-6 py-8 text-center">
-      <a href="/" class="block py-3 hover:text-black hover:bg-gray-50 rounded-lg transition-all duration-200">Hjem</a>
-      <a [routerLink]="['/menu']" [fragment]="'food'"
-        class="block py-3 hover:text-black hover:bg-gray-50 rounded-lg transition-all duration-200">
+    }"
+  >
+    <nav class="flex flex-col space-y-4 text-gray-700 font-medium px-6 py-6 text-center">
+      <a href="/" class="hover:text-black transition transform hover:translate-x-1 duration-200">Hjem</a>
+      <a
+        [routerLink]="['/menu']"
+        [fragment]="'food'"
+        class="hover:text-black transition transform hover:translate-x-1 duration-200"
+      >
         Meny
       </a>
-      <a href="/catering"
-        class="block py-3 hover:text-black hover:bg-gray-50 rounded-lg transition-all duration-200">Catering</a>
-      <a href="/contact"
-        class="block py-3 hover:text-black hover:bg-gray-50 rounded-lg transition-all duration-200">Kontakt</a>
-      <a href="https://booking.gastroplanner.no/melacafe/t"
-        class="block mt-6 bg-black text-white py-3.5 rounded-full hover:bg-gray-800 transition shadow-md w-full font-semibold">
-        Bestill bord
+      <a href="/catering" class="hover:text-black transition transform hover:translate-x-1 duration-200">Catering</a>
+      <a href="/contact" class="hover:text-black transition transform hover:translate-x-1 duration-200">Kontakt</a>
+      <a
+        href="https://booking.gastroplanner.no/melacafe/t"
+        class="bg-black text-white inline-block py-3 rounded hover:bg-gray-800 transition shadow-md mt-4"
+      >
+        Bestill nå
       </a>
     </nav>
   </div>

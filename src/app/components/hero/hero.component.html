@@ -1,40 +1,20 @@
-<section
-  class="relative h-screen min-h-[600px] flex items-center justify-center text-white text-center overflow-hidden">
-  <!-- Background Image with Parallax-like feel (if simple CSS allows) or just solid cover -->
-  <div class="absolute inset-0 z-0">
-    <div class="absolute inset-0 bg-black/40 z-10"></div> <!-- Darker overlay for better text contrast -->
-    <img src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.20 PM (1).jpeg" alt="Hero Background"
-      class="w-full h-full object-cover object-center transform scale-105 animate-scaleIn" />
-  </div>
+<section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white text-center" style="
+    background-image: url('../../../assets/images/lunch/WhatsApp\ Image\ 2025-04-21\ at\ 8.43.20\ PM\ \(1\).jpeg');
+  ">
+  <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
 
-  <div class="relative z-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto flex flex-col items-center">
-    <h1
-      class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight tracking-tight drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)] animate-slideDown">
-      Velkommen til <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200">Mela Café</span>
+  <div class="relative z-10 p-8 rounded-lg max-w-3xl">
+    <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slideDown drop-shadow-lg">
+      Velkommen til Mela Café
     </h1>
-
-    <div class="w-24 h-1 bg-white/80 rounded mb-8 animate-fadeIn mx-auto"></div>
-
-    <p class="text-xl md:text-2xl lg:text-3xl mb-12 font-light tracking-wide text-gray-100 max-w-2xl animate-fadeIn opacity-0 mix-blend-screen"
+    <p class="text-xl md:text-3xl mb-10 font-light tracking-wide animate-fadeIn opacity-0"
       style="animation-delay: 0.3s; animation-fill-mode: forwards;">
       Autentiske smaker fra Palestina, Libanon og Syria
     </p>
-
-    <div class="flex flex-col sm:flex-row gap-4 animate-slideUp opacity-0"
+    <a href="https://booking.gastroplanner.no/melacafe/t"
+      class="inline-block bg-white text-black px-10 py-5 rounded-full font-semibold text-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-xl animate-slideUp opacity-0"
       style="animation-delay: 0.6s; animation-fill-mode: forwards;">
-      <a href="https://booking.gastroplanner.no/melacafe/t"
-        class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-black transition-all duration-200 bg-white rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.3)]">
-        <span>Bestill Bord</span>
-        <svg class="w-5 h-5 ml-2 -mr-1 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor"
-          viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
-        </svg>
-      </a>
-
-      <a [routerLink]="['/menu']" fragment="food"
-        class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-transparent border-2 border-white rounded-full hover:bg-white/10 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-white">
-        Se Meny
-      </a>
-    </div>
+      Bestill Bord
+    </a>
   </div>
 </section>
