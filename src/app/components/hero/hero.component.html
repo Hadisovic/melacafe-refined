@@ -1,20 +1,50 @@
-<section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white text-center" style="
+<section
+  class="relative h-screen bg-cover bg-center flex items-center justify-center text-white text-center overflow-hidden"
+  style="
     background-image: url('../../../assets/images/lunch/WhatsApp\ Image\ 2025-04-21\ at\ 8.43.20\ PM\ \(1\).jpeg');
   ">
-  <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
+  <!-- Warm gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-amber-900/40"></div>
 
+  <!-- Decorative floating elements -->
+  <div class="absolute top-20 left-10 w-32 h-32 bg-amber-400/10 rounded-full blur-2xl animate-float"></div>
+  <div class="absolute bottom-32 right-16 w-48 h-48 bg-orange-400/10 rounded-full blur-3xl animate-float"
+    style="animation-delay: 1.5s;"></div>
+
+  <!-- Main content -->
   <div class="relative z-10 p-8 rounded-lg max-w-3xl">
+    <!-- Floating badge -->
+    <div
+      class="inline-flex items-center gap-2 px-5 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-8 animate-fadeIn"
+      style="animation-delay: 0.1s; animation-fill-mode: forwards;">
+      <span class="w-2 h-2 bg-amber-400 rounded-full animate-pulseGlow"></span>
+      <span class="text-sm font-medium tracking-wider uppercase text-amber-100">Autentisk Midtøsten-kjøkken</span>
+    </div>
+
     <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-slideDown drop-shadow-lg">
-      Velkommen til Mela Café
+      Velkommen til <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-300">Mela
+        Café</span>
     </h1>
-    <p class="text-xl md:text-3xl mb-10 font-light tracking-wide animate-fadeIn opacity-0"
+    <p class="text-xl md:text-2xl mb-12 font-light tracking-wide animate-fadeIn opacity-0 text-gray-200"
       style="animation-delay: 0.3s; animation-fill-mode: forwards;">
       Autentiske smaker fra Palestina, Libanon og Syria
     </p>
     <a href="https://booking.gastroplanner.no/melacafe/t"
-      class="inline-block bg-white text-black px-10 py-5 rounded-full font-semibold text-lg hover:bg-gray-100 transition transform hover:scale-105 shadow-xl animate-slideUp opacity-0"
+      class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-10 py-4 rounded-full font-semibold text-lg hover:from-amber-600 hover:to-orange-600 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-amber-500/30 animate-slideUp opacity-0"
       style="animation-delay: 0.6s; animation-fill-mode: forwards;">
-      Bestill Bord
+      <span>Bestill Bord</span>
+      <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none"
+        stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+      </svg>
     </a>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-70">
+    <span class="text-xs uppercase tracking-widest text-amber-200">Utforsk</span>
+    <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
   </div>
 </section>
