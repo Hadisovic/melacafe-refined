@@ -1,107 +1,28 @@
-<section class="py-20 px-6 max-w-7xl mx-auto relative overflow-hidden" id="gallery">
-  <!-- Decorative background elements -->
-  <div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-    <div class="absolute top-20 left-10 w-64 h-64 bg-amber-500 rounded-full filter blur-3xl"></div>
-    <div class="absolute bottom-20 right-10 w-64 h-64 bg-orange-500 rounded-full filter blur-3xl"></div>
-  </div>
+<section class="py-16 px-6 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-10">Vårt Galleri</h2>
 
-  <!-- Section header with staggered animations -->
-  <div class="text-center mb-16 relative z-10">
-    <span class="inline-block px-6 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold mb-4 animate-fadeIn"
-      style="animation-delay: 0.1s; animation-fill-mode: forwards;">
-      BEGRENSESLØS OPPLEVELSE
-    </span>
-    <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 animate-fadeInUp opacity-0"
-      style="animation-delay: 0.2s; animation-fill-mode: forwards;">
-      Vårt Galleri
-    </h2>
-    <p class="text-gray-600 max-w-2xl mx-auto text-lg animate-fadeIn opacity-0"
-      style="animation-delay: 0.4s; animation-fill-mode: forwards;">
-      Opplev de autentiske smakene våre gjennom våre kunder og deres opplevelser
-    </p>
-  </div>
-
-  <!-- Gallery grid with staggered animations -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-    <!-- Gallery item 1 -->
-    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
-      style="animation: fadeInUp 0.6s ease-out forwards; opacity: 0; animation-delay: 0.1s;">
-      <div class="aspect-[4/3] overflow-hidden">
-        <img
-          src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.19 PM.jpeg"
-          alt="Stuffed"
-          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-        />
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-          <h3 class="text-white text-xl font-bold mb-1">Autentisk Oppskrift</h3>
-          <p class="text-gray-300 text-sm">Tradisjonelle smaker</p>
-        </div>
-      </div>
-      <!-- Hover ring effect -->
-      <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-400 rounded-2xl transition-colors duration-500"></div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 foodImages">
+    <div class="overflow-hidden rounded-xl shadow-lg relative group h-64">
+      <img src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.19 PM.jpeg" alt="Stuffed"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+    </div>
+    <div class="overflow-hidden rounded-xl shadow-lg relative group h-64">
+      <img src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.20 PM (1).jpeg" alt="Apple Salad"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
+    </div>
+    <div class="overflow-hidden rounded-xl shadow-lg relative group h-64">
+      <img src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.20 PM (2).jpeg" alt="Seekh kebab"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
     </div>
 
-    <!-- Gallery item 2 -->
-    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
-      style="animation: fadeInUp 0.6s ease-out forwards; opacity: 0; animation-delay: 0.2s;">
-      <div class="aspect-[4/3] overflow-hidden">
-        <img
-          src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.20 PM (1).jpeg"
-          alt="Apple Salad"
-          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-        />
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-          <h3 class="text-white text-xl font-bold mb-1">Frisk og Fremtidsrettet</h3>
-          <p class="text-gray-300 text-sm">Moderne stil</p>
-        </div>
-      </div>
-      <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-400 rounded-2xl transition-colors duration-500"></div>
+    <div
+      class="col-span-1 sm:col-span-2 md:col-span-3 overflow-hidden rounded-xl shadow-lg relative group h-80 md:h-96">
+      <img src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.21 PM.jpeg" alt="chicken tawok"
+        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 object-center" />
+      <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300"></div>
     </div>
-
-    <!-- Gallery item 3 -->
-    <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
-      style="animation: fadeInUp 0.6s ease-out forwards; opacity: 0; animation-delay: 0.3s;">
-      <div class="aspect-[4/3] overflow-hidden">
-        <img
-          src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.20 PM (2).jpeg"
-          alt="Seekh kebab"
-          class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-        />
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-          <h3 class="text-white text-xl font-bold mb-1">Tradisjonell Kvalitet</h3>
-          <p class="text-gray-300 text-sm">Ekte smak</p>
-        </div>
-      </div>
-      <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-400 rounded-2xl transition-colors duration-500"></div>
-    </div>
-
-    <!-- Gallery item 4 (featured) -->
-    <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer lg:col-span-2 lg:row-span-1"
-      style="animation: fadeInUp 0.6s ease-out forwards; opacity: 0; animation-delay: 0.4s;">
-      <div class="w-[642px] h-[448px] overflow-hidden">
-        <img
-          src="../../../assets/images/lunch/WhatsApp Image 2025-04-21 at 8.43.21 PM.jpeg"
-          alt="chicken tawok"
-          class="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-700 ease-out"
-        />
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <div class="absolute bottom-0 left-0 right-0 p-8">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="px-3 py-1 bg-amber-500 text-white text-xs font-bold rounded-full">POPULÆR</span>
-          </div>
-          <h3 class="text-white text-2xl font-bold mb-2">Chicken Tawok</h3>
-          <p class="text-gray-300">Et favoritt blant våre gjester</p>
-        </div>
-      </div>
-      <div class="absolute inset-0 border-2 border-transparent group-hover:border-amber-400 rounded-2xl transition-colors duration-500"></div>
-    </div>
-
   </div>
 </section>

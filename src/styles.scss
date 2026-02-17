@@ -8,11 +8,34 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-  @apply text-gray-900 bg-white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  @apply tracking-tight;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+body {
+  font-family: 'Inter', sans-serif;
+  @apply text-gray-900 bg-white antialiased selection:bg-black selection:text-white leading-relaxed;
+}
+
+::selection {
+  @apply bg-black text-white;
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full hover:bg-gray-400 transition;
 }
