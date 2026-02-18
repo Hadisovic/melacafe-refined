@@ -74,61 +74,61 @@ export class FoodMenuComponent {
   mainCourses = [
     {
       name: 'Kyllingvinger',
-      price: '279,-',
+      price: '299,-',
       description: 'Servert med bulgur, pitabrød, tzatziki og salat.',
       allergens: ['M', 'H'],
     },
     {
       name: 'Kofta',
-      price: '279,-',
+      price: '299,-',
       description:
         'Koftagryte, godt krydret kjøttdeig. Servert med salat, pitabrød, tzatziki og bulgur.',
       allergens: ['M', 'H'],
     },
     {
       name: 'Kyllinggryte',
-      price: '279,-',
+      price: '299,-',
       description:
         'Kylling med spinat og egyptisk molokhia (jute-blader). Servert med bulgur, pitabrød, tzatziki og salat.',
       allergens: ['M', 'H', 'Sf', 'Pk'],
     },
     {
-      name: 'Sikh Kebab',
-      price: '279,-',
+      name: 'Seekh Kebab',
+      price: '299,-',
       description:
         'Seekh kebab tilberedt med tradisjonelle Midtøsten-metoder. Servert med pitabrød, tomat og hvitløk.',
       allergens: ['M', 'H'],
     },
     {
-      name: 'Shakira Masala',
-      price: '279,-',
+      name: 'Shakiria Masala',
+      price: '299,-',
       description:
         'Oksegryte i smakfull yoghurtsaus med masala krydder. Anbefales. Serveres med bulgur, pitabrød, tzatziki og salat',
       allergens: ['M', 'H'],
     },
     {
       name: 'Lammekoteletter',
-      price: '299,-',
+      price: '349,-',
       description: 'Servert med bulgur, pitabrød, tzatziki og salat.',
       allergens: ['M', 'H'],
     },
     {
       name: 'Kylling Tawok',
-      price: '299,-',
+      price: '309,-',
       description:
         'Godt marinert benfri kyllinglår fra grillen. Saftig og smakfull. Servert med bulgur, pitabrød, avokadohummus, tzatziki og salat.',
       allergens: ['M', 'H'],
     },
     {
       name: 'Grill Mix',
-      price: '319,-',
+      price: '339,-',
       description:
         'Marinert kylling og Seekh kebab på spyd. Servert med bulgur, pitabrød, tzatziki og salat.',
       allergens: ['M', 'H'],
     },
     {
       name: 'Halloumiburger',
-      price: '279,-',
+      price: '289,-',
       description:
         'Ost med tradisjon fra tidlig arabisk kjøkken. Servert med avokadohummus og tzatziki.',
       allergens: ['M', 'H', 'Sf'],
@@ -138,62 +138,50 @@ export class FoodMenuComponent {
   mezahMenu = [
     {
       name: 'Vegetar Mezah',
-      price: '315,-',
+      price: '349,-',
       description:
         'Seks forskjellige vegetariske mezahretter satt sammen av kokken. Perfekt for deling.',
       allergens: ['H', 'M', 'P', 'Sf'],
     },
     {
       name: 'Mezah med Kjøtt',
-      price: '330,-',
+      price: '369,-',
       description:
         'Seks forskjellige mezahretter med kjøtt, satt sammen av kokken. Flott for to eller flere.',
       allergens: ['H', 'M', 'P', 'Sf'],
     },
     {
       name: 'Klassisk Mezah med Grillretter',
-      price: '440,- per person',
+      price: '459,- per person',
       description:
         'Inkluderer hummus, tzatziki, tabbouleh, falafel, sambosa, arabisk tallerken, halloumi, kylling, seekh kebab, buffalo kyllingvinger, bulgur og pitabrød. Minst 2 personer.',
       allergens: ['M', 'H', 'Sf', 'P'],
     },
     {
       name: 'Kald Mezah – per rett',
-      price: '79,-/89,-',
+      price: '99,-',
       description:
-        'Hummus • Hummus med avokado • Tzatziki • Aioli • Tabbouleh • Baba Ganosh • Dolma • Syrisk salat',
+        'Hummus • Hummus med avokado • Tzatziki • Aioli • Tabbouleh • Baba Ganosh • Syrisk salat • Oliven',
       allergens: ['Sf', 'M', 'H'],
     },
     {
       name: 'Varm Mezah – per rett',
-      price: '79,-/89,-',
+      price: '99,- (kjøtt 109,-)',
       description:
-        'Aubergine • Blomkålfingre • Halloumi • Börek minirull • Bulgur • Falafel • Vegetarisk Sambosa • Kikerter i tomatsaus • Ris • Kjøttboller • Oksekjøtt i saus • Arabisk pølse • Kylling i saus • Potetbåter • Batataharra',
+        'Bulgur • Börek • Potetgryte • Dolma • Kikerter • Falafel • Sambosa • Ris • Arabisk pølse • Kyllingvinger • Kjøttboller (109,-) • Kylling i saus (109,-) • Oksekjøtt i saus (109,-) • Potetbåter • Batataharra',
       allergens: ['H', 'M', 'Sf'],
     },
     {
       name: 'Mini Grill Mezah Retter',
-      price: '120,- per rett',
+      price: '129,-/149,-',
       description:
-        'Velg mellom: Seekh kebabspyd, Kylling Tawok, Lammekoteletter, Kyllingvinger',
+        'Seekh Kebab (129,-) • Kylling Tawok (129,-) • Lammekoteletter (149,-)',
       allergens: ['H', 'M'],
     },
     {
       name: 'Pitabrød',
-      price: '25,-',
-      description: 'Vanlig hvete-pitabrød.',
-      allergens: ['H'],
-    },
-    {
-      name: 'Zaatar Pita (Timian)',
-      price: '30,-',
-      description: 'Hvete-pitabrød toppet med zaatar (timian).',
-      allergens: ['H', 'Sf'],
-    },
-    {
-      name: 'Hvitløkspita',
-      price: '30,-',
-      description: 'Pitabrød med hvitløk.',
+      price: '39,-',
+      description: 'Vanlig hvete-pitabrød. Også tilgjengelig med zaatar eller hvitløk.',
       allergens: ['H'],
     },
     {
@@ -249,13 +237,13 @@ export class FoodMenuComponent {
     },
     {
       name: 'Kylling/Hummus',
-      price: '299,-',
+      price: '309,-',
       description: 'Godt marinert kylling med hummus. Inkluderer tzatziki, salat og pitabrød.',
       allergens: ['Sf', 'H', 'M'],
     },
     {
       name: 'Lammekoteletter/Hummus',
-      price: '299,-',
+      price: '349,-',
       description: 'Lammekoteletter med hummus. Inkluderer tzatziki, salat og pitabrød.',
       allergens: ['Sf', 'H', 'M'],
     },
@@ -277,58 +265,42 @@ export class FoodMenuComponent {
       description: 'Marinert kylling og Seekh kebab med hummus. Inkluderer tzatziki, salat og pitabrød.',
       allergens: ['Sf', 'H', 'M'],
     },
-    // {
-    //   name: 'Sterk Hummus (Vegansk)',
-    //   price: '244,-',
-    //   description: 'Sterk hummus med ovnsbakte rotgrønnsaker, salat og pitabrød.',
-    //   allergens: ['Sf', 'H'],
-    // },
   ];
-  
+
 
   veganMenu = [
     {
       name: 'Spicy Hummus',
-      price: '244,-',
+      price: '249,-',
       description: 'Med ovnsbakte rotgrønnsaker, salat og pitabrød.',
       allergens: ['Sf', 'H']
     },
     {
       name: 'Spicy Sambosa',
-      price: '244,-',
+      price: '249,-',
       description: 'Med ovnsbakte rotgrønnsaker, salat og pitabrød.',
       allergens: ['H']
     },
     {
+      name: 'Salat à la Mela',
+      price: '249,-',
+      description: 'Blandet salat med rosiner og hvitløk braisert i olivenolje, granateple og eddik. Servert med pitabrød.',
+      allergens: []
+    },
+    {
       name: 'Falafel',
-      price: '244,-',
+      price: '249,-',
       description: 'Fritert kikertblanding, servert med pitabrød, avokadohummus og salat. Tilgjengelig uten allergener.',
       allergens: ['H', 'Sf', 'Sn']
     },
     {
-      name: 'dolma',
-      price: '244,-',
+      name: 'Dolma',
+      price: '249,-',
       description: 'Fylte vinblader med ris. Serveres med pitabrød og salat.',
       allergens: ['H']
     },
-    {
-      name: 'vegan falafelburger',
-      price: '244,-',
-      description: 'Ren veganburger av falafeldeig. Serveres med avokadohummus og salat.',
-      allergens: ['H','Hf', 'Sn']
-    },
   ];
-  
 
-  soups = [
-    {
-      name: 'Mulligatawny',
-      price: '239,-',
-      description: 'Linsesuppe (Vegansk).',
-      allergens: ['H']
-    }
-  ];
-  
 
   desserts = [
     {
@@ -354,7 +326,13 @@ export class FoodMenuComponent {
       price: '120,-',
       description: 'Tradisjonell kake fra midtøsten. Søt',
       allergens: ['M', 'H', 'E', 'N']
+    },
+    {
+      name: 'Sjokoladekake',
+      price: '120,-',
+      description: 'Rik og deilig sjokoladekake.',
+      allergens: ['M', 'H', 'E', 'N']
     }
   ];
-  
+
 }

@@ -12,9 +12,6 @@
     <a [routerLink]="[]" fragment="vegan"
       class="px-4 py-2 rounded-full text-sm font-medium bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-md transition-all duration-300 border border-amber-200/50">🌱
       Vegansk</a>
-    <a [routerLink]="[]" fragment="soups"
-      class="px-4 py-2 rounded-full text-sm font-medium bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-md transition-all duration-300 border border-amber-200/50">🍲
-      Supper</a>
     <a [routerLink]="[]" fragment="desserts"
       class="px-4 py-2 rounded-full text-sm font-medium bg-amber-50 text-amber-700 hover:bg-amber-100 hover:shadow-md transition-all duration-300 border border-amber-200/50">🍰
       Desserter</a>
@@ -32,7 +29,7 @@
   <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Last ned vår meny</h2>
   <p class="text-gray-500 mb-6">Finn din favorittrett blant våre autentiske retter</p>
   <div class="flex justify-center gap-4 flex-wrap">
-    <a href="../../../assets/menu/Meny februar engelsk 2025.pdf" download
+    <a href="../../../assets/menu/Yasser_Meny_MelaCafe_E.pdf" download
       class="group inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-amber-300/40 font-medium">
       <span>Engelsk Meny</span>
       <svg class="w-4 h-4 transform group-hover:translate-y-0.5 transition-transform duration-300" fill="none"
@@ -41,7 +38,7 @@
           d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
       </svg>
     </a>
-    <a href="../../../assets/menu/Meny februar 2025.pdf" download
+    <a href="../../../assets/menu/Yasser_Meny_MelaCafe_N.pdf" download
       class="group inline-flex items-center gap-2 bg-white text-amber-700 px-6 py-3 rounded-full border-2 border-amber-400 hover:bg-amber-50 transition-all duration-300 shadow-sm hover:shadow-md font-medium">
       <span>Norsk Meny</span>
       <svg class="w-4 h-4 transform group-hover:translate-y-0.5 transition-transform duration-300" fill="none"
@@ -155,30 +152,7 @@
     </div>
   </section>
 
-  <section id="soups" class="scroll-mt-32" *ngIf="soups.length">
-    <div class="flex items-center gap-4 mb-8">
-      <div class="w-12 h-1 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full"></div>
-      <h2 class="text-3xl font-bold text-gray-900">Supper</h2>
-    </div>
-    <div class="grid gap-4">
-      <div *ngFor="let item of soups"
-        class="group bg-white rounded-xl p-5 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-amber-200/50 relative overflow-hidden">
-        <div
-          class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-400 to-orange-400 rounded-r opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        </div>
-        <div class="flex justify-between items-start">
-          <h3 class="text-lg font-semibold text-gray-800 group-hover:text-amber-700 transition-colors duration-300">{{
-            item.name }}</h3>
-          <span class="text-sm font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full whitespace-nowrap ml-4">{{
-            item.price }}</span>
-        </div>
-        <p class="text-sm text-gray-600 mt-2 leading-relaxed">{{ item.description }}</p>
-        <p class="text-xs text-gray-400 italic mt-2" *ngIf="item.allergens.length">
-          Allergens: {{ item.allergens.join(", ") }}
-        </p>
-      </div>
-    </div>
-  </section>
+
 
   <section id="desserts" class="scroll-mt-32" *ngIf="desserts.length">
     <div class="flex items-center gap-4 mb-8">
